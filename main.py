@@ -3,7 +3,7 @@ from utils import *
 
 
 device = load_device()
-model = import_model(device=device)
+model = import_model(bucket="mbenxsalha", key="diffusion/state_dict.pickle", device=device)
 
 st.title("Welcome to The Pizza Detective!")
 st.write("The image you upload will be fed to a Deep Neural Network in real-time to verify if it is a pizza or not")
